@@ -2,7 +2,7 @@
 --  Step 1: extract years, months and sum of total paid
 --  Step 2: group years revenue by years
 --  Step 3: sum revenues of all years
---  Step 4: union the steps
+--  Step 4: union the steps | make sure to put the order by clause in the last union
 
 select extract(year from start_timestamp) as yrs 
 , extract(month from start_timestamp) as mnth 
